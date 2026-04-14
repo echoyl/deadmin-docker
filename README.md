@@ -6,7 +6,7 @@ docker config of deadmin
 
 ```shell
 # build
-docker-compose up -d
+docker compose up -d
 # run create deadmin
 docker compose run --rm app
 ```
