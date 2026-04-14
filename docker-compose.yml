@@ -33,9 +33,9 @@ services:
     command: [
       #"composer create-project laravel/laravel . 12.* --prefer-dist --no-interaction && "
       #"composer","create-project","laravel/laravel",".","12.*","--prefer-dist","--no-interaction",
-      #"composer config -g repo.packagist composer https://mirrors.cloud.tencent.com/composer/ && composer create-project laravel/laravel . 12.* --prefer-dist --no-interaction && cp /tmp/config/.env .env && sed -i -E \"/'mysql'\\s*=>\\s*\\[/,/\\],/ s/'prefix'\\s*=>\\s*'[^']*'/'prefix' => 'la_'/\" ./config/database.php && echo 'prefix updated' && composer require echoyl/sa && php artisan deadmin:publish --force && php artisan vendor:publish --tag=sanctum-migrations && php artisan migrate && php artisan storage:link && chmod -R +777 ./storage",
+      "composer config -g repo.packagist composer https://mirrors.cloud.tencent.com/composer/ && composer create-project laravel/laravel . 12.* --prefer-dist --no-interaction && cp /tmp/config/.env .env && sed -i -E \"/'mysql'\\s*=>\\s*\\[/,/\\],/ s/'prefix'\\s*=>\\s*'[^']*'/'prefix' => 'la_'/\" ./config/database.php && echo 'prefix updated' && composer require echoyl/sa && php artisan deadmin:publish --force && php artisan vendor:publish --tag=sanctum-migrations && php artisan migrate && php artisan storage:link && chmod -R +777 ./storage",
       # "&& chown -R www-data:www-data /var/www/html && php artisan key:generate --force",
-      "composer require echoyl/sa && php artisan deadmin:publish --force && php artisan vendor:publish --tag=sanctum-migrations && php artisan migrate && php artisan storage:link && chmod -R +777 ./storage",
+      #"composer require echoyl/sa && php artisan deadmin:publish --force && php artisan vendor:publish --tag=sanctum-migrations && php artisan migrate && php artisan storage:link && chmod -R +777 ./storage",
     ]
     networks:
       - app-network
